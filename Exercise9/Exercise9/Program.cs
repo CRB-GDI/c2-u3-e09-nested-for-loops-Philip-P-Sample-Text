@@ -29,22 +29,20 @@ namespace Exercise9
                 Console.WriteLine();
             }
 
-            int rows;
-            int addition = 0;
+            
 
             Console.WriteLine("How many rows of asterisks do you want?");
-            rows = int.Parse(Console.ReadLine());
+            int rows = int.Parse(Console.ReadLine());
 
-            for (int k = 0; k < rows; k++)
+            for (int k = 0; k <= rows; k++)
             {
 
-                for (int y = rows + addition; y >= rows; y--)
+                for (int y = 0; y <= k; y++)
                 {
                     Console.Write("*");
                 }
 
                 Console.WriteLine();
-                addition++;
             }
         }
     }
